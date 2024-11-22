@@ -1,0 +1,46 @@
+{
+  "Admin/Jobs": {
+    "layout": "grid",
+    "comment":"Admin/Admin_Jobs",
+    "table": "jsharmony.job",
+    "title":"Jobs",
+    "menu":"admin",
+    "caption": ["","Job","Jobs"],
+    "actions":"B",
+    "sort": ["vjob_etstmp"],
+    "fields":[
+      {"name":"job_id","type":"bigint","key":1,"caption":"ID","link":"browse:Admin/Job_Tabs&job_id"},
+      {"name":"job_etstmp","type":"datetime","length":"7", "caption":"Entry Timestamp"},
+      {"name":"job_user","type":"varchar","length":"20", "caption":"Entry User"}, 
+
+      {"name":"job_source","type":"varchar","length":"32", "caption": "Source"},
+      {"name":"job_action","type":"varchar","length":"32", "caption": "Action Type"},
+      {"name":"job_action_target","type":"varchar","length":"50", "caption": "Action Name"},
+
+      {"name":"job_params","type":"varchar","length":"255", "caption": "Params"},
+      {"name":"job_prty","type":"int","length":"255"},
+      {"name":"job_tag","type":"varchar","length":"255", "caption":"Tag"},
+      {"name":"job_rslt","type":"varchar","length":"32", "caption":"Result"},
+      {"name":"job_rslt_tstmp","type":"datetime","length":"7", "caption":"Result Timestamp"},
+      {"name":"job_rslt_user","type":"varchar","length":"20", "caption":"Result User"},
+      {"name":"job_snotes","type":"varchar", "caption":"System Notes"},
+      
+      {"name":"has_doc","type":"varchar","caption":"Has Doc",
+        "sqlselect":"(case (select 1 from jsharmony.job_doc where job_doc.job_id=job_id) when 1 then 'X' else '' end)",
+        "link":"browse:Admin/Job_Doc&job_id"
+      },
+      {"name":"has_email","type":"varchar","caption":"Has Email",
+        "sqlselect":"(case (select 1 from jsharmony.job_email where job_email.job_id=job_id) when 1 then 'X' else '' end)",
+        "link":"browse:Admin/Job_Email&job_id"
+      },
+      {"name":"has_sms","type":"varchar","caption":"Has SMS",
+        "sqlselect":"(case (select 1 from jsharmony.job_sms where job_sms.job_id=job_id) when 1 then 'X' else '' end)",
+        "link":"browse:Admin/Job_SMS&job_id"
+      },
+      {"name":"has_note","type":"varchar","caption":"Has Note",
+        "sqlselect":"(case (select 1 from jsharmony.job_note where job_note.job_id=job_id) when 1 then 'X' else '' end)",
+        "link":"browse:Admin/Job_Note&job_id"
+      },
+    ]
+  },
+}
