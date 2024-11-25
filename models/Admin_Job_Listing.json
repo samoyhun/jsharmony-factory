@@ -1,9 +1,9 @@
 {
-  "Admin/Jobs": {
+  "Admin/Job_Listing": {
     "layout": "grid",
-    "comment":"Admin/Admin_Jobs",
+    "comment":"Admin/Admin_Job_Listing",
     "table": "jsharmony.job",
-    "title":"Jobs",
+    "title":"Job Listing",
     "menu":"admin",
     "caption": ["","Job","Jobs"],
     "actions":"B",

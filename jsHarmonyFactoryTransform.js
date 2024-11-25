@@ -503,7 +503,7 @@ function jsHarmonyFactoryTransform(module){
     'Admin/Help_Listing': 'Admin/Help_Listing',
     'Admin/HelpTarget_Popup_Listing': 'Admin/HelpTarget_Popup_Listing',
     'Admin/Message_Queue': 'Admin/Message_Queue',
-    'Admin/Jobs': 'Admin/Jobs',
+    'Admin/Job_Listing': 'Admin/Job_Listing',
     'Admin/Job_Tabs': 'Admin/Job_Tabs',
     'Admin/Job_Queue': 'Admin/Job_Queue',
     'Admin/Job_Email': 'Admin/Job_Email',
