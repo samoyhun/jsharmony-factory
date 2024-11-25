@@ -12,8 +12,8 @@
     "tabpos":"bottom",
 	  "tabs":[
       {"name":"Queues","target":"Admin/Job_Queue","bindings":{"job_id":"job_id"}},
-      {"name":"Emails","target":"Admin/Job_Email","bindings":{"job_id":"job_id"}},
       {"name":"Documents","target":"Admin/Job_Doc","bindings":{"job_id":"job_id"}},
+      {"name":"Emails","target":"Admin/Job_Email","bindings":{"job_id":"job_id"}},
       {"name":"SMS","target":"Admin/Job_SMS","bindings":{"job_id":"job_id"}},
       {"name":"Notes","target":"Admin/Job_Note","bindings":{"job_id":"job_id"}},
     ],

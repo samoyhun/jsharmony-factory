@@ -4,7 +4,7 @@
     "layout":"grid", 
     "table":"jsharmony.job_note",
     "caption":[0,"Job Note","Job Notes"],
-    "title":"Note",
+    "title":"Notes",
     "actions":"B",
     "menu":"Admin/Job_Note",
     "sort": ["vjob_note_id"],
