@@ -1,0 +1,15 @@
+{
+  "Admin/Message_Queue_Add": {
+    "layout": "form",
+    "table": "jsharmony.queue",
+    "title":"Add Message Queue",
+    "caption":["","Message","Messages"],
+    "actions":"BI", 
+    "menu":"admin",
+    "popup":[700,300],
+	  "fields":[
+      {"name":"queue_name","caption":"Name"},
+      {"name":"queue_message","caption":"Message"},
+    ],
+  },
+}

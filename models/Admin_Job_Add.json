@@ -1,0 +1,20 @@
+{
+  "Admin/Job_Add": {
+    "layout": "form",
+    "table": "jsharmony.job",
+    "title":"Add Job",
+    "caption": ["","Job","Jobs"],
+    "actions":"BI", 
+    "menu":"admin",
+    "popup":[700,300],
+	  "fields":[
+      {"name":"job_source","type":"varchar","length":"32", "caption": "Source"},
+      {"name":"job_action","type":"varchar","length":"32", "caption": "Action Type"},
+      {"name":"job_action_target","type":"varchar","length":"50", "caption": "Action Target"},
+
+      {"name":"job_params","type":"varchar", "caption": "Params"},
+      {"name":"job_prty","type":"int"},
+      {"name":"job_tag","type":"varchar","length":"255", "caption":"Tag"},
+    ],
+  },
+}
