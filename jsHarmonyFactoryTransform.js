@@ -504,6 +504,7 @@ function jsHarmonyFactoryTransform(module){
     'Admin/HelpTarget_Popup_Listing': 'Admin/HelpTarget_Popup_Listing',
     'Admin/Message_Queue_Listing': 'Admin/Message_Queue_Listing',
     'Admin/Message_Queue_Add': 'Admin/Message_Queue_Add',
+    'Admin/Scheduled_Task_Runner': 'Admin/Scheduled_Task_Runner',
     'Admin/Job_Listing': 'Admin/Job_Listing',
     'Admin/Job': 'Admin/Job',
     'Admin/Job_Queue': 'Admin/Job_Queue',

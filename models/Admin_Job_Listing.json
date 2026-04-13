@@ -9,6 +9,7 @@
     "actions":"B",
     "sort": ["vjob_etstmp"],
     "buttons":[
+      {"name":"ScheduledTaskRunner", "link":"Scheduled_Task_Runner", "icon":"calendar","text":"Run Scheduled Task", "actions": "B"},
       {"name":"AddJob", "link":"insert:Job", "icon":"add","text":"Add Job", "actions": "B"}
     ],
     "fields":[
